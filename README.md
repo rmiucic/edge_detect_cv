@@ -1,2 +1,2 @@
 # edge_detect_cv
-Source code for the MS Community C++
+Simple source code that performs Canny edge detecton. The code is for the MS Community C++ IDE.
