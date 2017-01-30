@@ -11,7 +11,7 @@ int main(int argc, char* argv[]) {
 		return -1;		//if no file present
 	}
 	cvtColor(src_img, src_grey, CV_RGB2GRAY);				//convert to grayscale 
-	GaussianBlur(src_grey, src_blr, Size(5, 5), 2.1, 2.1);  //blur image to remove many unneded edges  
+	GaussianBlur(src_grey, src_blr, Size(4, 4), 2.1, 2.1);  //blur image to remove many unneded edges  
 	Canny(src_blr, edges, 0, 30, 3);						//find edges with Canny detection algorithm
 	bitwise_not(edges, edges_wht);							//convert to white background from black
 	//imwrite("edges_wht.jpg", edges_wht);					//save the file
